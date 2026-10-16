@@ -1,0 +1,183 @@
+﻿.project-builder {
+  max-width: 900px;
+  margin: 64px auto;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #dce2ea;
+  border-radius: 12px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 28px;
+}
+
+.intro {
+  margin: 0 0 28px;
+  color: #526075;
+}
+
+.add-service {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+}
+
+.add-service label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.service-field {
+  flex: 1;
+  min-width: 0;
+}
+
+.quantity-field {
+  width: 112px;
+}
+
+input,
+select,
+button {
+  min-height: 44px;
+  border-radius: 6px;
+  font: inherit;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #aab6c7;
+  background: #fff;
+  color: inherit;
+}
+
+button {
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  background: #245bc4;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #19489f;
+}
+
+button:disabled {
+  background: #e4e8ee;
+  color: #586375;
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 3px solid #6895ef;
+  outline-offset: 3px;
+}
+
+.hint {
+  margin: 10px 0 28px;
+  color: #526075;
+  font-size: 13px;
+}
+
+.error {
+  color: #a62222;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #dce2ea;
+}
+
+thead,
+tfoot {
+  background: #f3f6fa;
+}
+
+thead th {
+  font-size: 13px;
+  color: #526075;
+}
+
+tbody th {
+  font-weight: 500;
+}
+
+tfoot {
+  font-weight: 700;
+}
+
+.money {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.remove-button {
+  background: transparent;
+  color: #a62222;
+  padding: 8px;
+}
+
+.remove-button:hover:not(:disabled) {
+  background: #fcecec;
+}
+
+.empty-state {
+  margin: 0;
+  padding: 32px 16px;
+  text-align: center;
+  color: #526075;
+  border: 1px dashed #aab6c7;
+  border-radius: 6px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .project-builder {
+    margin: 20px 12px;
+    padding: 20px;
+  }
+
+  .add-service {
+    flex-wrap: wrap;
+  }
+
+  .service-field {
+    flex-basis: 100%;
+  }
+
+  .quantity-field {
+    flex: 1;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+}
